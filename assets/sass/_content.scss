@@ -1,0 +1,270 @@
+@use "./varebles" as *;
+.content {
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+  width: 100%;
+  &_navbar {
+    @include flexBox(space-between, center, 30px);
+    h3 {
+      font-weight: 500;
+      font-size: 24px;
+      color: $color_black;
+    }
+  }
+}
+.info {
+  background-color: #fff;
+  border-radius: 30px;
+  @include gridBox(repeat(3, 1fr), 20px);
+  text-align: center;
+  padding: 20px 0;
+  &_item {
+    @include flexBox(center, center, 10px);
+    text-align: start;
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      color: #acacac;
+    }
+    h3 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1;
+      letter-spacing: -0.01em;
+      color: #333;
+    }
+  }
+}
+.form {
+  background-color: #fff;
+  @include flexBox(flex-start, center, 10px);
+  padding: 8px;
+  width: 216px;
+  box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
+  border-radius: 12px;
+  input,
+  button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  input {
+    font-weight: 400;
+    font-size: 14px;
+    color: #b5b7c0;
+  }
+}
+.up,
+.down {
+  @include flexBox(center, center, 5px);
+  margin-top: 10px;
+}
+.up {
+  color: $color_text;
+  span {
+    color: $color_light_green;
+  }
+}
+.down {
+  color: $color_text;
+
+  span {
+    color: $color_red;
+  }
+}
+
+.customer {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px 30px;
+  margin-top: 20px;
+  .form {
+    background: #f9fbff;
+  }
+}
+.customer_navbar {
+  @include flexBox(space-between, center, 5px);
+  h2 {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    color: $color_black;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: $color_light_green;
+  }
+}
+.customer_search {
+  @include flexBox(space-between, center, 20px);
+  .filter {
+    background: #f9fbff;
+    // background-color: red;
+    border-radius: 8px;
+    padding: 5px;
+    @include flexBox(space-between, center, 5px);
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: -0.01em;
+      color: #7e7e7e;
+    }
+    select {
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+  }
+}
+.customer_content {
+  &-navbar {
+    @include gridBox(1fr 1fr 1fr 1fr 1fr 1fr, 10px);
+    margin-top: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    h3 {
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: -0.01em;
+      color: #b5b7c0;
+    }
+  }
+  &-item {
+    @include gridBox(1fr 1fr 1fr 1fr 1fr 1fr, 10px);
+    margin-top: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+
+    h3 {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: -0.01em;
+      color: $color_text;
+      a {
+        color: $color_text;
+      }
+    }
+  }
+}
+
+.active,
+.inactive {
+  border: 1px solid #006AFF;
+  border-radius: 4px;
+  padding: 4px 12px;
+  width: 80px;
+  height: 29px;
+  background-color: #006AFF;
+  color: #fff;
+}
+.inactive {
+  border: 1px solid #006AFF;
+  background: #006AFF;
+  color: #fff;
+}
+
+
+@media (max-width:900px) {
+  .info {
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 30px;
+    @include gridBox((none), 20px);
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+    &_item {
+      display: flex;
+      flex-wrap: wrap;
+      text-align: start;
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        color: #acacac;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 1;
+        letter-spacing: -0.01em;
+        color: #333;
+      }
+    }
+  }
+  .customer {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    max-width: 600px;
+    width: 100%;
+    .form {
+      background: #f9fbff;
+    }
+  }
+  .customer_search {
+    @include flexBox(space-between, center, 20px);
+    display: none;
+    .filter {
+      background: #f9fbff;
+      // background-color: red;
+      border-radius: 8px;
+      padding: 5px;
+      @include flexBox(space-between, center, 5px);
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: -0.01em;
+        color: #7e7e7e;
+      }
+      select {
+        border: none;
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+  .customer_content {
+    width: 100%;
+    overflow-x: scroll;
+    &-navbar {
+      width: 900px;
+      @include gridBox(1fr 1fr 1fr 1fr 1fr 1fr, 10px);
+      margin-top: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+      h3 {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: -0.01em;
+        color: #b5b7c0;
+      }
+    }
+    &-item {
+      width: 900px;
+      @include gridBox(1fr 1fr 1fr 1fr 1fr 1fr, 10px);
+      margin-top: 10px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+  
+      h3 {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: -0.01em;
+        color: $color_text;
+        a {
+          color: $color_text;
+        }
+      }
+    }
+  }
+  .form {
+    display: none;
+  }
+}

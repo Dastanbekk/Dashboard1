@@ -1,0 +1,114 @@
+@use "./varebles" as *;
+
+.statistic{
+    background-color: #F8F7F1;
+    padding: 30px 20px 30px 20px;
+    &_title{
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+    &_desc{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+}
+.card{
+    padding: 24px 24px 20px 24px;
+    background-color: #FFF;
+    border-radius: 10px;
+    &_img{
+        margin-top: 30px;
+    }
+    &_top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h3{
+            color: #656575;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        p{
+            padding: 7px 12px;
+            background-color: #F4F5F7;
+            color: #656575;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+            text-align: right;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+    }
+    &_percent{
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 70px;
+        h3{
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 40px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        span{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            letter-spacing: -0.009em;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #FF2727;
+        }
+    }
+    &_title{
+        margin-top: 16px;
+        p{
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #656575;
+        }
+    }
+    &_bottom{
+        margin-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: right;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #525256;
+        }
+    }
+}

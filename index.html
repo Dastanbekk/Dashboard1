@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="dashboard">
+        <div class="container">
+          <div class="dashboard_item">
+            <a href="/" class="dashboard_logo">
+              <img src="./svg/logo.svg" alt="" />
+              
+            </a>
+            <div class="dashboard_links">
+              <a href="/" class="links active_links">
+                <div class="links_item">
+                  <div class="line"></div><img src="./svg/links1.svg" alt="" /><span>Dashboard</span>
+                </div>
+              </a>
+              <a href="/product.html" class="links">
+                <div href="/" class="links_item">
+                  <div class="line"></div> <img src="./svg/links2.svg" alt="" /><span>Drivers</span>
+                </div>
+              </a>
+              <div class="links">
+                <div class="links_item">
+                  <div class="line"></div><img src="./svg/links3.svg" alt="" /><span>Bookings</span>
+                </div>
+              </div>
+              <div class="links">
+                <div class="links_item">
+                  <div class="line"></div><img src="./svg/links4.svg" alt="" /><span>Notifications</span>
+                </div>
+              </div>
+              <div class="links">
+                <div class="links_item">
+                  <div class="line"></div><img src="./svg/links5.svg" alt="" /><span>Settings</span>
+                </div>
+              </div>
+              <div class="dashboard_links-two">
+                <h3>Report</h3>
+                <div class="links">
+                  <div class="links_item">
+                    <div class="line"></div><img src="./svg/links6.svg" alt="" /><span>Help</span>
+                  </div>
+                </div>
+                <div class="links">
+                  <div class="links_item">
+                    <div class="line"></div><img src="./svg/links7.svg" alt="" /><span>Help</span>
+                  </div>
+                </div>
+                <div class="links">
+                  <div class="links_item">
+                    <div class="line"></div><img src="./svg/links8.svg" alt="" /><span>Help</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="dashboard_footer">
+            <div class="user">
+              <button>
+                <img src="./svg/out.svg" alt="out"><span>Logout</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="statistic">
+        <div class="container">
+          <div class="statistic_in">
+            <h3 class="statistic_title">Todays Statistics</h3>
+            <p class="statistic_desc">Tue, 14 Nov, 2022, 11.30 AM </p>
+            <div class="cards">
+              <div class="card">
+                <div class="card_top">
+                  <h3>Income</h3>
+                  <p>Today</p>
+                </div>
+                <div class="card_percent">
+                  <h3>5 person</h3><span>↓ 15%</span>
+                </div>
+                <div class="card_title">
+                  <p>Compared to $9940 yesterday</p>
+                </div>
+                <div class="card_bottom">
+                  <p>Last week Income</p>
+                  <p>$25658.00</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_top">
+                  <h3>Expences</h3>
+                  <p>Today</p>
+                </div>
+                <div class="card_percent">
+                  <h3>$ 5660.00</h3><span style="color: #52C93F;">↑ 2.5%</span>
+                </div>
+                <div class="card_title">
+                  <p>Compared to $9940 yesterday</p>
+                </div>
+                <div class="card_bottom">
+                  <p>Last week Income</p>
+                  <p>$25658.00</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card_top">
+                  <h3>Hire vs Cancel</h3>
+                  <p>Today</p>
+                </div>
+                <div class="card_img">
+                  <img src="./svg/card-img1.svg" alt="radio">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="thirt">
+        <div class="thirt_top">
+          <img src="./svg/notify.svg" alt="notification">
+          <div class="search">
+            <input type="text" placeholder="Search here">
+            <img src="./svg/search.svg" alt="icon">
+          </div>
+        </div>
+        <div class="thirt_car">
+          <div class="car-availability">
+            <label>Car Availability</label>
+            <div class="input-group">
+              <div class="car_input">
+                <img src="./svg/links2.svg" alt="car">
+                <select class="car-number">
+                  <option> Car number</option>
+                </select>
+              </div>
+              <input type="date" class="date" />
+              <input type="time" class="time" value="10:00" />
+              <button class="check-button">Check</button>
+            </div>
+          </div>
+        </div>
+        <section class="content">
+          <div class="container">
+            <div class="customer">
+              <div class="customer_navbar">
+                <div class="customer_navbar-text">
+                  <h2>Live Car Status</h2>
+                </div>
+                <div class="customer_search">
+                  <div class="filter">
+                    <p><img src="./svg/filter.svg" alt=""></p>
+                    <select>
+                      <option value="Newest">Filter</option>
+                      <option value="Medium">Filter</option>
+                      <option value="Oldest">Filter</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="customer_content">
+                <div class="customer_content-navbar">
+                  <h3>No.</h3>
+                  <h3>Car no.</h3>
+                  <h3>Driver</h3>
+                  <h3>Status</h3>
+                  <h3>Earning</h3>
+                </div>
+                <div class="customer_content-item">
+                  <h3>01</h3>
+                  <h3>6465</h3>
+                  <h3><img src="./img/avatar2.png" alt=""> <span>Alex Noman</span></h3>
+                  <h3>
+                    <img src="./svg/completed.svg" alt=""> <span>Completed</span>
+                  </h3>
+                  <h3>$ 35.44</h3>
+                  <button class="active">Details</button>
+                </div>
+                <div class="customer_content-item">
+                  <h3>01</h3>
+                  <h3>6465</h3>
+                  <h3><img src="./img/avatar2.png" alt=""> <span>Alex Noman</span></h3>
+                  <h3>
+                    <img src="./svg/pending.svg" alt=""> <span>Pending</span>
+                  </h3>
+                  <h3>$ 35.44</h3>
+                  <button class="active">Details</button>
+                </div>
+                <div class="customer_content-item">
+                  <h3>01</h3>
+                  <h3>6465</h3>
+                  <h3><img src="./img/avatar2.png" alt=""> <span>Alex Noman</span></h3>
+                  <h3>
+                    <img src="./svg/route.svg" alt=""> <span>In Route</span>
+                  </h3>
+                  <h3>$ 35.44</h3>
+                  <button class="active">Details</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="thirt_bottom">
+            <div class="bottom_top">
+              <div class="earning-summary">
+                <label class="title">Earning Summary</label>
+                <div class="date-range">
+                  <select>
+                    <option>Mar 2022 - Oct 2022</option>
+                  </select>
+                </div>
+                <div class="toggle-options">
+                  <label class="option">
+                    <input type="radio" name="period" checked />
+                    <span>Last 6 months</span>
+                  </label>
+                  <label class="option">
+                    <input type="radio" name="period" />
+                    <span>Same period last year</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="bottom_footer">
+              <img src="./img/Chart.png" alt="chart">
+            </div>
+        </div>
+      </section>
+
+    </main>
+  </body>
+</html>
